@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/students"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Dados do estudante:
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-group>
+      <ion-item>
+        <ion-label><h1>Id:</h1><p>{{ student.id }}</p></ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <h1>Nome:</h1>
+          <p>{{ student.name | titlecase }}</p>
+               </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label><h1>CPF:</h1> <p>{{ student.cpf }}</p> </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label><h1>Semestre:</h1> <p>{{ student.semestre }}</p> </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label><h1>Turma:</h1> <p>{{ student.turma }}</p> </ion-label>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+</ion-content>
